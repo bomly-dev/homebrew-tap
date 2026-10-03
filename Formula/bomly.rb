@@ -5,13 +5,13 @@
 class Bomly < Formula
   desc "Free, open-source CLI for dependency intelligence and SBOM analysis"
   homepage "https://bomly.dev/cli"
-  version "0.25.0"
+  version "0.27.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.25.0/bomly_0.25.0_darwin_amd64.tar.gz"
-      sha256 "4f2c244fcadbcb5018c65854aa81b75bb1d0f103c579b5e52f387e4624b5fbc2"
+      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.27.0/bomly_0.27.0_darwin_amd64.tar.gz"
+      sha256 "67be27be590fe17249db0b28fc506d6133da43db5c9e72ddfada227cdef2dc7f"
 
       define_method(:install) do
         bin.install "bomly"
@@ -20,8 +20,8 @@ class Bomly < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.25.0/bomly_0.25.0_darwin_arm64.tar.gz"
-      sha256 "96ad3fa425b0e56717b513a5d831950a64f4204939b4bbe9e64069f0745b9898"
+      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.27.0/bomly_0.27.0_darwin_arm64.tar.gz"
+      sha256 "45467b09da8009c2bf51bb9a644cf4cec4c94b5b241e31ba58197faa0e17a7ba"
 
       define_method(:install) do
         bin.install "bomly"
@@ -33,8 +33,8 @@ class Bomly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.25.0/bomly_0.25.0_linux_amd64.tar.gz"
-      sha256 "d4df183a023cdc870da0a78c1c9fd2c187a6bda5889fbfc51515a5003ffa282d"
+      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.27.0/bomly_0.27.0_linux_amd64.tar.gz"
+      sha256 "7205d742d311caf6429ebd20458ae1b80821a091229355710d51cbbefabe3502"
       define_method(:install) do
         bin.install "bomly"
         doc.install "LICENSE", "NOTICE"
@@ -42,8 +42,8 @@ class Bomly < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.25.0/bomly_0.25.0_linux_arm64.tar.gz"
-      sha256 "63ba2a20fc431c9d51c6657e5695c0a39e4de43d623e378463aa5db2c23cf16b"
+      url "https://github.com/bomly-dev/bomly-cli/releases/download/v0.27.0/bomly_0.27.0_linux_arm64.tar.gz"
+      sha256 "c74e0063516a855722a6ed5d217a5947c8df80334259caa102bbeb1e22d70f2e"
       define_method(:install) do
         bin.install "bomly"
         doc.install "LICENSE", "NOTICE"
